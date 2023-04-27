@@ -20,7 +20,7 @@ int main()
     */
     cout << "How many kilometers did you travel?\n";
     cin >> dist;
-    cout << "How fast (km per hour) did you travel?\n";
+    cout << "How fast (km/h) did you travel?\n";
     cin >> rate;
     hours = dist / rate;
     cout << "You travelled for " << hours << " hours.\n";
@@ -34,7 +34,18 @@ int main()
     cout << "How many hours did you travel for? \n";
     cin >> hours;
     rate = dist / hours;
-    cout << "You travelled at " << rate << "km per hour.\n";
+    cout << "You travelled at " << rate << "km/h.\n";
+
+    /*
+    Part 3: Calculate and print distance based on time and speed input.
+    */
+    cout << endl;
+    cout << "How many hours did you travel for?\n";
+    cin >> dist;
+    cout << "How fast (km/h) did you travel? \n";
+    cin >> hours;
+    dist = rate * hours;
+    cout << "You travelled at " << rate << "km/h.\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
