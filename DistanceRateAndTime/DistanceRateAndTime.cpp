@@ -13,18 +13,28 @@ double hours = 1; // time = dist / rate
 
 int main()
 {
-    cout << setprecision(4) << fixed;
+    cout << setprecision(2) << fixed;
 
     /*
     Part 1: Calculate and print time based on distance and speed input.
     */
-    cout << "How many kilometers did you travel?\nHow fast (km per hour) did you travel?\n";
-    cout << "Distance in km: ";
+    cout << "How many kilometers did you travel?\n";
     cin >> dist;
-    cout << "Speed (km/h): ";
+    cout << "How fast (km per hour) did you travel?\n";
     cin >> rate;
     hours = dist / rate;
     cout << "You travelled for " << hours << " hours.\n";
+
+    /*
+    Part 2: Calculate and print speed based on distance and time input.
+    */
+    cout << endl;
+    cout << "How many kilometers did you travel?\n";
+    cin >> dist;
+    cout << "How many hours did you travel for? \n";
+    cin >> hours;
+    rate = dist / hours;
+    cout << "You travelled at " << rate << "km per hour.\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
