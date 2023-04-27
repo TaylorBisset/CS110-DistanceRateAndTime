@@ -2,10 +2,29 @@
 //
 
 #include <iostream>
+#include <cmath>
+#include <iomanip>
+
+using namespace std;
+
+double dist = 1;  // dist = rate * time
+double rate = 1;  // rate = dist / time
+double hours = 1; // time = dist / rate
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    cout << setprecision(4) << fixed;
+
+    /*
+    Part 1: Calculate and print time based on distance and speed input.
+    */
+    cout << "How many kilometers did you travel?\nHow fast (km per hour) did you travel?\n";
+    cout << "Distance in km: ";
+    cin >> dist;
+    cout << "Speed (km/h): ";
+    cin >> rate;
+    hours = dist / rate;
+    cout << "You travelled for " << hours << " hours.\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
